@@ -1,0 +1,77 @@
+/* Estilos gerais responsivos */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Seção de Serviços Responsiva */
+
+/* Para telas pequenas */
+@media (max-width: 767px) {
+    .servicos-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .item-servico {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+/* Para telas médias */
+@media (min-width: 768px) and (max-width: 999px) {
+    .servicos-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .item-servico {
+        width: 45%;
+        max-width: 300px;
+        margin: 0.5rem;
+    }
+}
+
+/* Para telas grandes */
+@media (min-width: 1000px) {
+    .servicos-box {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+
+    .item-servico {
+        width: 23%;
+        height: auto;
+    }
+}
+
+/* Outros estilos responsivos podem ser adicionados aqui */
+
+/* Exemplo de outros estilos de componentes */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
